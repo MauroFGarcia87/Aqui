@@ -20,6 +20,7 @@ h1 {
   font-style: normal;
   font-size: 130px;
   text-shadow: 8px 5px 5px rgba(0,0,0,0.59);
+  
  
 }
 
@@ -100,3 +101,14 @@ li a {
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
+
+@media only screen and (max-width: 500px) {
+  h1{
+    font-size: 50px;
+  }
+
+  h2{
+    font-size: 40px;
+  }
+}
+
