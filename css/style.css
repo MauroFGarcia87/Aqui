@@ -9,6 +9,11 @@ img {
   width: 100%;
 }
 
+.viviPicun{
+  width: 50%;
+  height: auto;
+}
+
 h1 {
   font-family: "Bangers", system-ui;
   font-weight: 400;
