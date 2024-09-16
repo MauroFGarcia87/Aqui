@@ -47,6 +47,22 @@ li a {
   background-color: #2559a5;
 }
 
+.bg-hospedaje{
+  background-color: #f16436;
+}
+
+.bg-restaurant{
+  background-color: #bd336f;
+}
+
+.bg-naturaleza{
+  background-color: #f58634;
+}
+
+.bg-maps{
+  background-color: #d93337;
+}
+
 .containerAuto {
   position: relative;
 }
