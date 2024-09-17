@@ -28,7 +28,7 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand d-flex justify-content-center" href="#">
-            <img src="./img/logoAquiPicun.png" alt="">
+            <img src="./img/logoAquiPicun.png" alt="" />
           </a>
         </div>
       </nav>
@@ -72,7 +72,9 @@
             <a href=""><img src="./img/alojamiento.png" alt="..." /></a>
           </div>
           <div class="card col-2 cardIconos">
-            <a href=""><img src="./img/iconoRestaurantePastel.png" alt="..." /></a>
+            <a href=""
+              ><img src="./img/iconoRestaurantePastel.png" alt="..."
+            /></a>
           </div>
           <div class="card col-2 cardIconos">
             <a href=""><img src="./img/parque.png" alt="..." /></a>
@@ -89,7 +91,7 @@
         </div>
       </section>
 
-      <div class=" container  bg-maps py-5 my-5" >
+      <div class="container bg-maps py-5 my-5">
         <div class="d-flex justify-content-center sombraMapa">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8705.26557973442!2d-69.28649114015244!3d-39.519541387212676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1725630971440!5m2!1ses!2sar"
@@ -103,7 +105,7 @@
         </div>
       </div>
 
-      <section class=" container my-5 bg-hospedaje p-5">
+      <section class="container my-5 bg-hospedaje p-5">
         <h2>Hospedaje</h2>
         <div class="row justify-content-around">
           <div class="col-3 card cardIconos mb-3">
@@ -119,7 +121,7 @@
             <img src="./img/alojamiento.png" alt="..." />
           </div>
           <div class="col-3 card cardIconos mb-3">
-           <img src="./img/alojamiento.png" alt="..." />
+            <img src="./img/alojamiento.png" alt="..." />
           </div>
           <div class="col-3 card cardIconos mb-3">
             <img src="./img/alojamiento.png" alt="..." />
@@ -133,43 +135,65 @@
         </div>
       </section>
 
-      <section class=" container my-5 bg-restaurant p-5">
-        <h2>Restaureantes</h2>
+      <section class="container my-5 bg-restaurant p-5">
+        <h2>Restaurantes</h2>
         <div class="row justify-content-around">
           <div class="col-3 card cardIconos mb-3">
             <img src="./img/iconoRestaurantePastel.png" alt="..." />
           </div>
           <div class="col-3 card cardIconos mb-3">
-           <img src="./img/iconoRestaurantePastel.png" alt="..." />
+            <img src="./img/iconoRestaurantePastel.png" alt="..." />
           </div>
           <div class="col-3 card cardIconos mb-3">
-           <img src="./img/iconoRestaurantePastel.png" alt="..." />
+            <img src="./img/iconoRestaurantePastel.png" alt="..." />
           </div>
           <div class="col-3 card cardIconos mb-3">
-           <img src="./img/iconoRestaurantePastel.png" alt="..." />
-          </div>          
+            <img src="./img/iconoRestaurantePastel.png" alt="..." />
+          </div>
         </div>
       </section>
 
-      <section class=" container my-5 bg-naturaleza p-5">
-        <h2 > Naturaleza</h2>
+      <section class="container my-5 bg-naturaleza p-5">
+        <h2>Naturaleza</h2>
         <div class="my-3 sombraMapa">
-          <img src="./img/lago.jpg" alt="">
+          <img src="./img/lago.jpg" alt="" />
         </div>
         <div class="row justify-content-around">
           <div class="col-3 card cardIconos mb-3">
             <img class="w-100" src="./img/negrin.jpg" alt="..." />
           </div>
           <div class="col-3 card cardIconos mb-3">
-           <img src="./img/lago1.jpg" alt="..." />
+            <a href="" data-bs-toggle="modal" data-bs-target="#modal1"
+              ><img src="./img/lago1.jpg" alt="..."
+            /></a>
           </div>
           <div class="col-3 card cardIconos mb-3">
-           <img src="./img/maquina.jpg" alt="..." />
+            <img src="./img/maquina.jpg" alt="..." />
           </div>
           <div class="col-3 card cardIconos mb-3">
             <img src="./img/parque.png" alt="..." />
-          </div>          
+          </div>
         </div>
+
+        <!--Modal-->
+
+         <!--Imagen Lago-->
+         <div class="modal" tabindex="-1" id="modal1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/lago1.jpg" alt="">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <!--Fin Modal-->
       </section>
     </main>
     <footer></footer>
