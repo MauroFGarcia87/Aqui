@@ -67,8 +67,14 @@ li a {
   position: relative;
 }
 
-.cardIconos {
-  width: 15%;
+.contenedorIconos{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardIconos{
+  
+  width: 150px;
   height: auto;
   box-shadow: -5px 13px 22px 15px rgba(13,13,12,0.75);
   transition: all 0.4s;

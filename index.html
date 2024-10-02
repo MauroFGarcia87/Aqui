@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -67,26 +67,32 @@
       </section>
 
       <section class="container my-5">
-        <div class="row justify-content-around">
-          <div class="card col-2 cardIconos">
-            <a href=""><img src="./img/alojamiento.png" alt="..." /></a>
-          </div>
-          <div class="card col-2 cardIconos">
+        <div class="row contenedorIconos justify-content-around">
+          <div class="card col-4 cardIconos col-sm-4 col-md-4  col-md-2 col-xl-2  my-2">
             <a href=""
-              ><img src="./img/iconoRestaurantePastel.png" alt="..."
+              ><img  src="./img/iconosPoggi/iconoPolicia.png" alt="..."
             /></a>
           </div>
-          <div class="card col-2 cardIconos">
-            <a href=""><img src="./img/parque.png" alt="..." /></a>
+          <div class="card cardIconos col-4 col-sm-4 col-md-4  col-md-2 col-xl-2 my-2">
+            <a href=""
+              ><img  src="./img/iconosPoggi/iconoSupermercado.png" alt="..."
+            /></a>
           </div>
-          <div class="card col-2 cardIconos">
-            <a href=""><img src="./img/hospital.png" alt="..." /></a>
+          <div class="card cardIconos col-4 col-sm-4 col-md-4 col-md-2 col-xl-2 my-2">
+            <a href=""
+              ><img  src="./img/iconoRestaurantePastel.png" alt="..."
+            /></a>
           </div>
-          <div class="card col-2 cardIconos">
-            <a href=""><img src="./img/iconoGomeria.png" alt="..." /></a>
+          <div class="card cardIconos col-4 col-sm-4 col-md-4  col-md-2 col-xl-2 my-2">
+            <a href=""
+              ><img  src="./img/iconosPoggi/iconoHospital.png" alt="..."
+            /></a>
           </div>
-          <div class="card col-2 cardIconos">
-            <a href=""><img src="./img/iconoBanco.png" alt="..." /></a>
+          <div class="card cardIconos col-4 col-sm-4 col-md-4 col-md-2 col-xl-2 my-2">
+            <a href=""><img  src="./img/iconoGomeria.png" alt="..." /></a>
+          </div>
+          <div class="card cardIconos col-4 col-sm-4 col-md-4  col-md-2 col-xl-2 my-2">
+            <a href=""><img  src="./img/iconoBanco.png" alt="..." /></a>
           </div>
         </div>
       </section>
@@ -109,29 +115,14 @@
         <h2>Hospedaje</h2>
         <div class="row justify-content-around">
           <div class="col-3 card cardIconos mb-3">
-            <img src="./img/alojamiento.png" alt="..." />
+            <a data-bs-toggle="modal" data-bs-target="#modalDep1" href=""><img src="./img/alojamiento.png" alt="..." /></a>
           </div>
           <div class="col-3 card cardIconos mb-3">
             <img src="./img/alojamiento.png" alt="..." />
           </div>
           <div class="col-3 card cardIconos mb-3">
             <img src="./img/alojamiento.png" alt="..." />
-          </div>
-          <div class="col-3 card cardIconos mb-3">
-            <img src="./img/alojamiento.png" alt="..." />
-          </div>
-          <div class="col-3 card cardIconos mb-3">
-            <img src="./img/alojamiento.png" alt="..." />
-          </div>
-          <div class="col-3 card cardIconos mb-3">
-            <img src="./img/alojamiento.png" alt="..." />
-          </div>
-          <div class="col-3 card cardIconos mb-3">
-            <img src="./img/alojamiento.png" alt="..." />
-          </div>
-          <div class="col-3 card cardIconos mb-3">
-            <img src="./img/alojamiento.png" alt="..." />
-          </div>
+          </div>          
         </div>
       </section>
 
@@ -159,36 +150,104 @@
           <img src="./img/lago.jpg" alt="" />
         </div>
         <div class="row justify-content-around">
-          <div class="col-3 card cardIconos mb-3">
-            <img class="w-100" src="./img/negrin.jpg" alt="..." />
+          <div class="col-3 card cardIconos mb-3 justify-content-center">
+            <a href="" data-bs-toggle="modal" data-bs-target="#modalRio"
+              ><img class="w-100" src="./img/negrin.jpg" alt="..."
+            /></a>
           </div>
-          <div class="col-3 card cardIconos mb-3">
+          <div class="col-3 card cardIconos mb-3 justify-content-center">
             <a href="" data-bs-toggle="modal" data-bs-target="#modal1"
               ><img src="./img/lago1.jpg" alt="..."
             /></a>
           </div>
-          <div class="col-3 card cardIconos mb-3">
-            <img src="./img/maquina.jpg" alt="..." />
+          <div class="col-3 card cardIconos mb-3 justify-content-center">
+            <a href="" data-bs-toggle="modal" data-bs-target="#modalMaquina"
+              ><img src="./img/maquina.jpg" alt="..."
+            /></a>
           </div>
-          <div class="col-3 card cardIconos mb-3">
+          <div class="col-3 card cardIconos mb-3 justify-content-center">
             <img src="./img/parque.png" alt="..." />
           </div>
         </div>
 
         <!--Modal-->
 
-         <!--Imagen Lago-->
-         <div class="modal" tabindex="-1" id="modal1">
+        <!--Imagen Lago-->
+        <div class="modal" tabindex="-1" id="modal1">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
               </div>
               <div class="modal-body">
-                <img src="./img/lago1.jpg" alt="">
+                <img src="./img/lago1.jpg" alt="" />
               </div>
-              
+            </div>
+          </div>
+        </div>
+
+        <!--Imagen Rio-->
+        <div class="modal" tabindex="-1" id="modalRio">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/negrin.jpg" alt="" class="w-100" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Imagen Maquina-->
+        <div class="modal" tabindex="-1" id="modalMaquina">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/maquina.jpg" alt="" class="w-100" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!--Modal Dep1-->
+         <div class="modal" tabindex="-1" id="modalDep1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body flex justify-content-center">
+                <img src="./img/fotosMore/WhatsApp Image 2024-09-29 at 19.55.55.jpeg" alt="" class="w-50 my-3" />
+                <img src="./img/fotosMore/WhatsApp Image 2024-09-29 at 19.55.56 (1).jpeg" alt="" class="w-50 my-3" />
+                <img src="./img/fotosMore/WhatsApp Image 2024-09-29 at 19.55.56.jpeg" alt="" class="w-50 my-3" />
+                <img src="./img/fotosMore/WhatsApp Image 2024-09-29 at 19.55.57 (1).jpeg" alt="" class="w-50 my-3" />
+                <img src="./img/fotosMore/WhatsApp Image 2024-09-29 at 19.55.58.jpeg" alt="" class="w-50 my-3" />
+              </div>
             </div>
           </div>
         </div>
