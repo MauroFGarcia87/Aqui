@@ -107,6 +107,11 @@ li a {
   z-index: 1000;
 }
 
+.borrar{
+  width: 20%;
+  height: auto;
+}
+
 /*Animaciones*/
 
 @keyframes un_efecto {
