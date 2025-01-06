@@ -9,10 +9,17 @@ img {
   width: 100%;
 }
 
+.logoAqui{
+  width: 90% ;
+  
+}
+
 .viviPicun{
   width: 50%;
   height: auto;
 }
+
+
 
 .letras{
   position: absolute;
@@ -48,7 +55,7 @@ li a {
 }
 
 .bg-logo {
-  background-color: #2559a5;
+  background-color:#585570;
 }
 
 .bg-hospedaje{
