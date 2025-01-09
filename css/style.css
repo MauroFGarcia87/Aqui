@@ -10,7 +10,7 @@ img {
 }
 
 .logoAqui{
-  width: 90% ;
+position: absolute;
   
 }
 
@@ -154,6 +154,61 @@ li a {
 
   h2{
     font-size: 40px;
+  }
+}
+
+header {
+  display: flex;
+  justify-content:end;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  nav.active {
+    display: flex;
   }
 }
 

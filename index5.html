@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú Desplegable</title>
+    <style>
+      /* Estilos generales */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+      }
+
+      header .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      .menu-icon {
+        display: none;
+        font-size: 1.5em;
+        cursor: pointer;
+      }
+
+      nav {
+        display: flex;
+        gap: 20px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+      }
+
+      /* Estilos para dispositivos móviles */
+      @media (max-width: 768px) {
+        .menu-icon {
+          display: block;
+        }
+
+        nav {
+          display: none;
+          flex-direction: column;
+          gap: 10px;
+          position: absolute;
+          top: 60px;
+          right: 20px;
+          background-color: #333;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        nav.active {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="logo">Mi Página</div>
+      <div class="menu-icon" id="menu-icon">☰</div>
+      <nav id="menu">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre Nosotros</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </header>
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, et vel sit
+        provident nisi odio. Consequatur, aut! Reiciendis alias et cupiditate
+        consectetur dolorem error, quia voluptate impedit possimus eaque labore.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, et vel sit
+        provident nisi odio. Consequatur, aut! Reiciendis alias et cupiditate
+        consectetur dolorem error, quia voluptate impedit possimus eaque labore.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, et vel sit
+        provident nisi odio. Consequatur, aut! Reiciendis alias et cupiditate
+        consectetur dolorem error, quia voluptate impedit possimus eaque labore.
+      </p>
+    </main>
+    <script>
+      // JavaScript para activar/desactivar el menú
+      const menuIcon = document.getElementById("menu-icon");
+      const menu = document.getElementById("menu");
+
+      menuIcon.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
