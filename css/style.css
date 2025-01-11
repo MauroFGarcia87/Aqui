@@ -210,6 +210,17 @@ nav a {
   nav.active {
     display: flex;
   }
+
+  /* Ajustes para el modal en dispositivos móviles */
+  .modal-content {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .modal-content img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* Estilos para la publicidad */
