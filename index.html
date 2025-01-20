@@ -166,8 +166,8 @@
       </div>
       
       <!-- Botón de WhatsApp -->
-      <a href="https://web.whatsapp.com/send?phone=+2604048508" target="_blank" class="whatsapp-button">
-         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+      <a id="whatsapp-link" class="whatsapp-button" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
       </a>
 
     </main>
@@ -218,6 +218,22 @@
     window.addEventListener('load', () => {
       modal.style.display = 'flex';
     });
+
+     // Número de WhatsApp (reemplázalo con tu número)
+     const phoneNumber = "+5492604048508"; // Incluye el código del país (España: +34)
+
+          // Detecta si el usuario está en un dispositivo móvil
+          const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
+
+          // Selecciona el enlace del botón de WhatsApp
+          const whatsappLink = document.getElementById("whatsapp-link");
+
+          // Establece el enlace según el dispositivo
+          if (isMobile) {
+            whatsappLink.href = `https://wa.me/${phoneNumber}`;
+          } else {
+            whatsappLink.href = `https://web.whatsapp.com/send?phone=${phoneNumber}`;
+          }
     </script>
   </body>
 </html>
