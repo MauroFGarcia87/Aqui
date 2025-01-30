@@ -234,7 +234,7 @@ nav a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 60%;
+  width: 100%;
   height: auto;
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
