@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Y017SRT6RX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Y017SRT6RX");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eventos</title>
     <!-- Link a Bootstrap-->
     <link
@@ -24,64 +39,56 @@
       src="https://kit.fontawesome.com/c731f86dec.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body class="bg-main">
-    
-         <!--HEADER-->
+  </head>
+  <body class="bg-main">
+    <!--HEADER-->
 
     <header>
-      
-        <div class="menu-icon" id="menu-icon">☰</div>
-        <nav id="menu">
-          <a href="./index.html">Aqui</a>        
-          <a href="./servicios.html">Servicios</a>
-          <a href="./hospedaje.html">Hospedaje</a>
-          <a href="./eventos.html">Eventos</a>
-          <a href="./nuestraHistoria.html">Nuestra Historia</a>
-          <a href="./cultura.html">Cultura</a>
-          <a href="./produccion.html">Produccion</a>
-          <a href="postales.html">Postales de mi tierra</a>
-        </nav>
-      </header>
-  
-      <div class="container">
-        <div class="d-flex justify-content-center">
-          <img class="" src="./img/ultimoEncavezadoAqui.png" alt="" />
-        </div>
+      <div class="menu-icon" id="menu-icon">☰</div>
+      <nav id="menu">
+        <a href="./index.html">Aqui</a>
+        <a href="./servicios.html">Servicios</a>
+        <a href="./hospedaje.html">Hospedaje</a>
+        <a href="./eventos.html">Eventos</a>
+        <a href="./nuestraHistoria.html">Nuestra Historia</a>
+        <a href="./cultura.html">Cultura</a>
+        <a href="./produccion.html">Produccion</a>
+        <a href="postales.html">Postales de mi tierra</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <img class="" src="./img/ultimoEncavezadoAqui.png" alt="" />
       </div>
-    
+    </div>
+
     <main>
-
-    <section class="container my-4 ">
+      <section class="container my-4">
         <img class="w-100" src="./img/eventos.png" alt="" />
-    </section>
+      </section>
 
-    <section class="container mt-5 ">
+      <section class="container mt-5">
         <img class="w-100" src="./img/imgChacarero.jpeg" alt="" />
-    </section>
+      </section>
 
-    
-
-    <section class="container my-5 ">
-       
+      <section class="container my-5">
         <div class="d-flex justify-content-center">
-            <video controls class="w-75" src="./img/flashPesca.webm"></video>
+          <video controls class="w-75" src="./img/flashPesca.webm"></video>
         </div>
-    </section>
-
+      </section>
     </main>
     <footer class="my-3 py-4">
-
       <section class="container my-2">
         <img class="w-100" src="./img/paginaDelSurAqui.png" alt="" />
       </section>
 
       <section class="container">
         <div class="d-flex justify-content-center">
-          <i class="text-center fas fa-1x fa-envelope mx-5 "> somospaginasdelsur@gmail.com</i>
-         
+          <i class="text-center fas fa-1x fa-envelope mx-5">
+            somospaginasdelsur@gmail.com</i
+          >
         </div>
-        
       </section>
     </footer>
     <script
@@ -93,7 +100,7 @@
     <script>
       AOS.init();
     </script>
-     <script>
+    <script>
       // JavaScript para activar/desactivar el menú
       const menuIcon = document.getElementById("menu-icon");
       const menu = document.getElementById("menu");
@@ -102,18 +109,18 @@
         menu.classList.toggle("active");
       });
 
-        // JavaScript para controlar la publicidad
-    const modal = document.getElementById('modal');
-    const modalClose = document.getElementById('modal-close');
+      // JavaScript para controlar la publicidad
+      const modal = document.getElementById("modal");
+      const modalClose = document.getElementById("modal-close");
 
-    modalClose.addEventListener('click', () => {
-      modal.style.display = 'none';
-    });
+      modalClose.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
 
-    // Mostrar la publicidad automáticamente al cargar la página
-    window.addEventListener('load', () => {
-      modal.style.display = 'flex';
-    });
+      // Mostrar la publicidad automáticamente al cargar la página
+      window.addEventListener("load", () => {
+        modal.style.display = "flex";
+      });
     </script>
-</body>
+  </body>
 </html>
